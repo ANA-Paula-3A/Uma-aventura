@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Uma aventura</title>
+</head>
+<body>
+<main>
+    <div class="passo ativo" id="passo-0">
+        <img src="img/cenario-passo0.png" alt="caverna">
+        <p>Durante uma caminhada na floresta perto da sua cidade, você encontra uma caverna misteriosa. Ao explorar seu interior, você descobre um antigo mapa que revela a existência de um templo perdido que guarda um artefato poderoso. Decidido a desvendar o mistério, você se prepara para seguir as pistas deixadas por antigos exploradores.</p>
+        <button class="btn-proximo" data-proximo="1">Seguir para a Floresta Enigmática</button>
+        <button class="btn-proximo" data-proximo="2">Voltar para a Cidade e Buscar Ajuda</button>
+    </div>
+    
+    <div class="passo" id="passo-1">
+        <img src="img/cenario-passo1.jpg" alt="floresta enigmatica">
+        <p>Você decide seguir sozinho para a Floresta Enigmática. Ao adentrar a densa vegetação, você encontra um caminho bifurcado. Um lado parece levar a uma ponte suspensa sobre um abismo, enquanto o outro leva a uma trilha escura e estreita.</p>
+        <button class="btn-proximo" data-proximo="3">Atravessar a Ponte Suspensa</button>
+        <button class="btn-proximo" data-proximo="4">Seguir pela Trilha Escura</button>
+    </div>
+    
+    <div class="passo" id="passo-2">
+        <img src="img/cenario-passo2.jpg" alt="cidade">
+        <p>Você volta para a cidade e ninguém quis te ajudar.</p>
+        <button class="btn-proximo" data-proximo="1">Seguir para a Floresta Enigmática</button>
+    </div>
+    
+    <div class="passo" id="passo-3">
+        <img src="img/cenario-passo3.jpg" alt="ponte">
+        <p>A ponte range a cada passo, mas você a atravessa com cuidado. Do outro lado, você encontra uma clareira onde está escondida uma entrada secreta para o templo. No entanto, um enigma precisa ser resolvido para abrir a porta.</p>
+        <button class="btn-proximo" data-proximo="5">Tentar Resolver o Enigma</button>
+        <button class="btn-proximo" data-proximo="6">Procurar Outro Caminho</button>
+    </div>
+    
+    <div class="passo" id="passo-4">
+        <img src="img/cenario-passo4.jpg" alt="trilha escura">
+        <p>A trilha é apertada e cheia de obstáculos, mas você avança. Eventualmente, a trilha se abre para uma pequena caverna onde um antigo explorador deixou uma mensagem críptica sobre o artefato.</p>
+        <button class="btn-proximo" data-proximo="7">Decifrar a Mensagem</button>
+        <button class="btn-proximo" data-proximo="8">Ignorar a Mensagem e Seguir em Frente</button>
+    </div>
+    
+    <div class="passo" id="passo-5">
+        <img src="img/cenario-passo5.jpeg" alt="enigma">
+        <p>Você decifra o enigma com sucesso, e a porta do templo se abre. Lá dentro, você encontra o artefato poderoso que concede sabedoria infinita a quem o possui. Sua jornada foi um sucesso, e você volta para casa como um herói.</p>
+        <button class="btn-proximo" data-proximo="9">Continuar</button>
+    </div>
+    
+    <div class="passo" id="passo-6">
+        <p>Você decide não arriscar o enigma e continua explorando. Após uma longa busca, você se depara com uma armadilha antiga que quase te captura, mas consegue escapar. Infelizmente, o caminho de volta está bloqueado, e você é forçado a retornar para casa de mãos vazias.</p>
+        <button class="btn-proximo" data-proximo="10">Continuar</button>
+    </div>
+    
+    <div class="passo" id="passo-7">
+        <p>Ao decifrar a mensagem, você descobre que o artefato está escondido em uma sala secreta dentro do templo. Com essa informação, você consegue encontrar a entrada escondida e, finalmente, o artefato.</p>
+        <button class="btn-proximo" data-proximo="9">Continuar</button>
+    </div>
+    
+    <div class="passo" id="passo-8">
+        <p>Você ignora a mensagem e continua avançando. Eventualmente, você chega a uma câmara cheia de armadilhas. Sem o conhecimento da mensagem, você não consegue evitar as armadilhas e fica preso na câmara.</p>
+        <button class="btn-proximo" data-proximo="11">Continuar</button>
+    </div>
+    
+    <div class="passo" id="passo-9">
+        <p>Você encontrou o artefato e se tornou um sábio reverenciado. Fim!</p>
+    </div>
+    
+    <div class="passo" id="passo-10">
+        <p>Você sobreviveu à aventura, mas o artefato permanece perdido. Fim!</p>
+    </div>
+    
+    <div class="passo" id="passo-11">
+        <p>Sua jornada termina na câmara do templo, onde o mistério do artefato permanece intacto. Fim!</p>
+    </div>
+    
+
+</main>
+<script src="script.js"> </script>    
+</body>
+</html>
